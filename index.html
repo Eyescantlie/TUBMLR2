@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Community and Safety Policy — helping make our creative community safer, kinder, and more welcoming.">
+  <title>Community and Safety Policy</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://tawk.to" crossorigin>
+  <link rel="dns-prefetch" href="https://tawk.to">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Community and Safety Policy home"><img class="brand-logo" src="logo-banner.png" alt="Community and Safety Policy logo" height="46"><span class="brand-name">Community and Safety Policy</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav"><a href="#guidelines">Guidelines</a><a href="#tips">Safety tips</a><a href="#faq">FAQ</a></nav>
+    <a class="pill pill-blue" href="#report">Report a concern</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag-line">#trust #safety #community</p>
+        <h1>A safer space to <span>create together.</span></h1>
+        <p class="lead">Creativity thrives when everyone feels respected, protected, and welcome. Find guidance, report concerns, and see how we care for our community.</p>
+        <div class="actions"><a class="pill pill-blue" href="#report">Report a concern</a><a class="pill pill-line" href="#guidelines">Read the guidelines</a></div>
+      </div>
+      <article class="post hero-post" aria-hidden="true">
+        <div class="post-head"><span class="avatar">T</span><b>community-care</b><span class="follow">Follow</span></div>
+        <div class="post-art">make room<br>for everyone.</div>
+        <div class="post-body"><p>Be kind. Be curious. Keep it creative.</p><p class="tags">#respect #safety #trust #kindness</p></div>
+        <div class="post-foot"><span>♡ 2,600</span><span>↻ 880</span><span>💬 143</span></div>
+      </article>
+    </section>
+
+    <section class="wrap" id="tips">
+      <h2>Good communities are <span>made by all of us.</span></h2>
+      <div class="grid3">
+        <article class="post"><div class="post-head"><span class="avatar pink">R</span><b>respect</b></div><div class="post-body"><h3>Respect every creator</h3><p>Welcome different perspectives. Treat people with dignity, even when you disagree.</p><p class="tags">#respect #kindness</p></div></article>
+        <article class="post"><div class="post-head"><span class="avatar yellow">S</span><b>stay-safe</b></div><div class="post-body"><h3>Keep interactions safe</h3><p>Set boundaries, protect private information, and never pressure someone to engage.</p><p class="tags">#boundaries #privacy</p></div></article>
+        <article class="post"><div class="post-head"><span class="avatar green">T</span><b>trust</b></div><div class="post-body"><h3>Help build trust</h3><p>Use a unique password, never share login codes, and speak up about harmful behavior.</p><p class="tags">#accountsafety #report</p></div></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="guidelines">
+      <h2>Make space for <span>creative freedom.</span></h2>
+      <p class="sub">Our guidelines apply to profiles, comments, messages, groups, and shared content.</p>
+      <div class="rules">
+        <div><b>01</b><div><h3>Be respectful</h3><p>No harassment, threats, hate, or targeted abuse.</p></div></div>
+        <div><b>02</b><div><h3>Share responsibly</h3><p>Post content you have the right to share and label it appropriately.</p></div></div>
+        <div><b>03</b><div><h3>Keep trust genuine</h3><p>No impersonation, scams, deceptive links, or manipulation.</p></div></div>
+        <div><b>04</b><div><h3>Protect privacy</h3><p>Do not expose private or identifying information without consent.</p></div></div>
+      </div>
+    </section>
+
+    <section class="wrap report" id="report">
+      <div class="report-copy"><h2>See something <span>that concerns you?</span></h2><p class="sub">Send our team a report with clear details so the right people can review it. Please do not include passwords or payment details.</p><p class="note">✓ Reports are handled respectfully and privately.</p></div>
+      <form class="post report-form" id="reportForm">
+        <h3>Submit a report</h3><p class="small">Fields marked with * are required.</p>
+        <label for="reportType">What would you like to report? *</label>
+        <select id="reportType" required><option value="">Choose a topic</option><option>Harassment or bullying</option><option>Scam or suspicious activity</option><option>Impersonation</option><option>Inappropriate content</option><option>Privacy concern</option><option>Account concerns</option><option>Personal concerns</option><option>Other safety concern</option></select>
+        <label for="reportLink">Profile Link or Username*</label><input id="reportLink" type="text" placeholder="Paste a profile, post, or username">
+        <label for="reportDetails">Tell us what happened *</label><textarea id="reportDetails" rows="4" required placeholder="Include what happened, where it happened, and any useful context."></textarea>
+        <label for="reportEmail">Your email (optional)</label><input id="reportEmail" type="email" placeholder="you@example.com">
+        <button class="pill pill-blue submit-btn" type="submit">Send report</button>
+        <p class="small center">Please do not include passwords or payment details.</p>
+        <div class="form-message" id="formMessage" role="status"></div>
+      </form>
+    </section>
+
+    <section class="wrap narrow" id="faq">
+      <h2>Frequently asked <span>questions.</span></h2>
+      <details><summary>What happens after I submit a report?<i>+</i></summary><p>Your report is sent privately to our moderation team, who review it and follow up where needed.</p></details>
+      <details><summary>Can I report something from a private message?<i>+</i></summary><p>Yes. Include only the information needed for the safety team to understand the concern.</p></details>
+      <details><summary>How can I protect my account?<i>+</i></summary><p>Use a unique password, turn on two-factor authentication when available, avoid suspicious links, and never share verification codes.</p></details>
+      <details><summary>How do I contact support?<i>+</i></summary><p>Use the live chat button on this page to talk with our support team.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><img class="brand-logo" src="logo-banner.png" alt="Community and Safety Policy logo" height="46"><span class="brand-name">Community and Safety Policy</span></a><p>Creating a safer space, together.</p><small>© 2026 Community Trust &amp; Safety.</small></footer>
+
+  <div class="error-page" id="errorPage" role="alertdialog" aria-modal="true" aria-labelledby="errorTitle" hidden>
+    <div class="error-box">
+      <div class="error-icon" id="errorIcon">!</div>
+      <h2 id="errorTitle">Error</h2>
+      <p id="errorText">Error. Contact live chat support instead.</p>
+      <button class="pill pill-yellow" id="contactLiveSupport" type="button">Contact Live Support</button>
+      <button class="back-link" id="closeError" type="button">Go back</button>
+    </div>
+  </div>
+
+  <button class="chat-cover" id="chatCover" type="button" aria-label="Open live chat">
+    <img src="tumblr-cover.png" alt="">
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
